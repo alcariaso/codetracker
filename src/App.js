@@ -1,7 +1,8 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./component/HeroSection";
-import TaskList from "./components/TaskList";
+import { useState, useEffect } from "react";
+import NavBar from "./components/NavBar/NavBar";
+import HeroSection from "./component/HeroSection/HeroSection";
+import { TaskList } from "./components/TaskList/TaskList";
+import axios from "axios";
 
 function App() {
   const [tasks, setTasks] = useState([]);

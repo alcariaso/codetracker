@@ -5,8 +5,8 @@ export const TaskList = (tasks, setTasks) => {
     console.log('tasks:', tasks);
    
     return (
-        <>
-            <p className="task-list">To Do List</p>
+        <div className="task-list">
+            <p className="task-list__title">CODE TRACKER LIST</p>
             <div className="task-list__container">
                 {tasks.tasks.map((task) => (
                     <p key={task.id}>
@@ -21,6 +21,6 @@ export const TaskList = (tasks, setTasks) => {
                     </p>
                 ))}
             </div>
-        </>
+        </div>
     );
 }

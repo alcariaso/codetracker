@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "package.json": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

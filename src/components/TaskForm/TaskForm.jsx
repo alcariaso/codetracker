@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import '../../components/TaskForm/TaskForm.scss';
+import TaskList from "../TaskList/TaskList";
 
 
 
@@ -58,17 +59,16 @@ function Taskform() {
             </div>
 
             <div className="container">
+               
                 {
-                    task.map((indTask, index) => {
-                        return (
-                            <div className="task">
+                    task.map((indTask, index) => {(
+                            <div className="task" key={indTask.id}>
                                 <p className="task__text">{indTask}</p>
                                 <input className="task__checkBox" type="checkbox"></input>
                                 <div className="task__action">
                                     
                                     <button onClick={() => delTask(index)} className="btn task__btn">Delete</button>
                                 </div>
-
                                 {/* <button onClick={() => sendTasks(tasks)} className="btn form__btn">Send Tasks</button> */}
                             </div>
                    

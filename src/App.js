@@ -1,3 +1,8 @@
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./component/HeroSection";
+import TaskList from "./components/TaskList";
+
 function App() {
   const [tasks, setTasks] = useState([]);
 
@@ -26,10 +31,8 @@ function App() {
       <NavBar />
       <HeroSection />
       <TaskList tasks={tasks} setTasks={setTasks} />
-
     </>
   );
 }
 
 export default App;
-

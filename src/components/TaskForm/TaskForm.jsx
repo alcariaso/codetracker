@@ -15,10 +15,13 @@ function Taskform() {
         console.log(inputVal)
     }
 
-    function addTask () {
-        setTask((oldTask) => [...oldTask, inputVal])
-        console.log(task)
+    function addTask() {
+        if (inputVal.trim() !== "") { 
+            setTask((oldTask) => [...oldTask, inputVal]);
+            setInputVal(""); 
+        }
     }
+
 
     // changes for sending the current list supposedly
     // function addTask() {

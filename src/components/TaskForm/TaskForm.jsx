@@ -52,7 +52,7 @@ function Taskform() {
     return (
         <>
         <section className="TaskForm">
-            <h1 className="TaskForm__title">Code Task List</h1>
+            <h1 className="TaskForm__title">CODE TASK LIST</h1>
             <div className="form">
                 <input className="form__input" type="text" placeholder="Write Task.." onChange={writeTask}></input>
                 <button onClick={addTask} className="btn form__btn">Add Task</button>

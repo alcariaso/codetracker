@@ -10,6 +10,7 @@ export default function TaskList() {
         try {
             const response = await axios.get(`${REACT_APP_API_BASE_PATH}/tasks`)
             setTasks(response.data.tasks) // Update the tasks state with the fetched data
+            console.log(tasks)
         } catch (error) {
             console.error(error.message)
         }
@@ -25,8 +26,8 @@ export default function TaskList() {
         ))
     }
     return (
-        <>
-            <p className="task-list">To Do List</p>
+        <div className="task-list">
+            <p className="task-list__title">CODE TARCKER LIST</p>
             <div className="task-list__container">
                 {tasks.map((task) => (
                     <p key={task.id}>
@@ -41,6 +42,6 @@ export default function TaskList() {
                     </p>
                 ))}
             </div>
-        </>
+        </div>
     );
 }

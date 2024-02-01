@@ -1,2 +1,6 @@
 @use '../Styles/partials/typography' as *;
 @use '../Styles/partials/global' as *;
+
+.app__container {
+    display: flex;
+}

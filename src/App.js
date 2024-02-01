@@ -9,8 +9,10 @@ function App() {
     <>
       <NavBar/>
       <HeroSection/>
+      <div className='app__container'>
       <Taskform/>
       <TaskList/>
+      </div>
     </>
   );
 }

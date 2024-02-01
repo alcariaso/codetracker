@@ -27,7 +27,7 @@ export default function TaskList() {
     }
     return (
         <div className="task-list">
-            <p className="task-list__title">CODE TARCKER LIST</p>
+            <p className="task-list__title">CODE TRACKER LIST</p>
             <div className="task-list__container">
                 {tasks.map((task) => (
                     <p key={task.id}>
